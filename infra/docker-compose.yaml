@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: v-pix/yamdb_final:latest
+    image: vpix/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
