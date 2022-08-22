@@ -1,5 +1,7 @@
 # Групповой проект YaMDb
 
+[workflow](https://github.com/V-pix/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 ## Оглавление
 - [Описание](#description)
 - [Технологии](#technologies)
@@ -112,5 +114,3 @@ docker-compose exec web python manage.py loaddata fixtures.json
 - Ресурс genres: жанры произведений. Одно произведение может быть привязано к нескольким жанрам.
 - Ресурс reviews: отзывы на произведения. Отзыв привязан к определённому произведению.
 - Ресурс comments: комментарии к отзывам. Комментарий привязан к определённому отзыву.
-
-[workflow](https://github.com/V-pix/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)

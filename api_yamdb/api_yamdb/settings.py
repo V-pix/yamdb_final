@@ -4,11 +4,11 @@ import string
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
+SECRET_KEY =  os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['51.250.16.171']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -95,7 +95,6 @@ AUTH_USER_MODEL = 'reviews.User'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
